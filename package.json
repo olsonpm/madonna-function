@@ -1,0 +1,31 @@
+{
+  "name": "madonna-function",
+  "version": "0.1.0",
+  "description": "Creates a function which will only be called after its arguments are validated via madonna-fp",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olsonpm/madonna-function.git"
+  },
+  "author": "phil olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olsonpm/create-safe-fn/issues"
+  },
+  "homepage": "https://github.com/olsonpm/madonna-function#readme",
+  "dependencies": {
+    "lodash": "^4.12.0",
+    "madonna-fp": "github:olsonpm/madonna-fp#5eafaeba1033ffdbf0a8f956d0c7ac968bc843b8",
+    "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#03fa17f5d219d1c75a329db9935daaca3cf068e4",
+    "madonna-map": "github:olsonpm/madonna-map#53a3515b431f166affe00b7ed2b6965eeaffc445"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  }
+}
