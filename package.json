@@ -18,7 +18,7 @@
   "homepage": "https://github.com/olsonpm/madonna-function#readme",
   "dependencies": {
     "lodash": "^4.12.0",
-    "madonna-fp": "github:olsonpm/madonna-fp#5eafaeba1033ffdbf0a8f956d0c7ac968bc843b8",
+    "madonna-fp": "github:olsonpm/madonna-fp#cd1914a098de0863d8b517238a7548a6576796bf",
     "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#03fa17f5d219d1c75a329db9935daaca3cf068e4",
     "madonna-map": "github:olsonpm/madonna-map#53a3515b431f166affe00b7ed2b6965eeaffc445"
   },
