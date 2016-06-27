@@ -30,6 +30,7 @@
     "mocha": "^2.4.5",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
+    "strip-es6-externals": "github:olsonpm/strip-es6-externals",
     "webpack": "^1.13.1",
     "webpack-node-externals": "^1.2.0"
   }

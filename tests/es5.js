@@ -56,10 +56,10 @@ module.exports =
 
 	var chai = __webpack_require__(/*! chai */ 1),
 	    fp = __webpack_require__(/*! lodash/fp */ 2),
-	    madonna = __webpack_require__(/*! madonna-fp */ 3),
-	    madonnaFunction = __webpack_require__(/*! ../lib */ 4),
-	    sinon = __webpack_require__(/*! sinon */ 7),
-	    sinonChai = __webpack_require__(/*! sinon-chai */ 8);
+	    madonna = __webpack_require__(/*! madonna-fp/es6 */ 3),
+	    madonnaFunction = __webpack_require__(/*! ../es6 */ 4),
+	    sinon = __webpack_require__(/*! sinon */ 5),
+	    sinonChai = __webpack_require__(/*! sinon-chai */ 6);
 
 	//------//
 	// Init //
@@ -167,105 +167,24 @@ module.exports =
 
 /***/ },
 /* 3 */
-/*!*****************************!*\
-  !*** external "madonna-fp" ***!
-  \*****************************/
+/*!*********************************!*\
+  !*** external "madonna-fp/es5" ***!
+  \*********************************/
 /***/ function(module, exports) {
 
-	module.exports = require("madonna-fp");
+	module.exports = require("madonna-fp/es5");
 
 /***/ },
 /* 4 */
-/*!**********************!*\
-  !*** ./lib/index.js ***!
-  \**********************/
-/***/ function(module, exports, __webpack_require__) {
+/*!*************************!*\
+  !*** external "../es5" ***!
+  \*************************/
+/***/ function(module, exports) {
 
-	'use strict';
-
-	//
-	// README
-	// - A small wrapper around madonna-internal-fn.  I just want to give consumers
-	//   the option to map their arguments prior to calling the function.
-	//
-
-	//---------//
-	// Imports //
-	//---------//
-
-	var fp = __webpack_require__(/*! lodash/fp */ 2),
-	    madonna = __webpack_require__(/*! madonna-fp */ 3),
-	    madonnaFn = __webpack_require__(/*! madonna-internal-fn */ 5),
-	    madonnaMap = __webpack_require__(/*! madonna-map */ 6);
-
-	//------//
-	// Init //
-	//------//
-
-	var madonnaFunctionSchema = getMadonnaFunctionSchema(),
-	    createMapper = madonnaMap.createMapper;
-
-	//------//
-	// Main //
-	//------//
-
-	var exportCreate = madonnaFn({
-	  marg: madonnaFunctionSchema,
-	  fn: create
-	});
-
-	function create(argsObj) {
-	  var argMap = argsObj.argMap;
-	  var fn = argsObj.fn;
-	  var marg = argsObj.marg;
-
-
-	  var validatorFn = argMap ? createMapper({ marg: marg, argMap: argMap }) : madonna.createIdentityValidator(marg);
-
-	  return fp.flow(validatorFn, fn);
-	}
-
-	//-------------//
-	// Helper Fxns //
-	//-------------//
-
-	function getMadonnaFunctionSchema() {
-	  return {
-	    marg: ['require', 'isLadenPlainObject'],
-	    fn: ['require', 'isFunction'],
-	    name: ['isLadenString'],
-	    argMap: madonnaMap._getArgMapSchema(false)
-	  };
-	}
-
-	//---------//
-	// Exports //
-	//---------//
-
-	module.exports = {
-	  create: exportCreate
-	};
+	module.exports = require("../es5");
 
 /***/ },
 /* 5 */
-/*!**************************************!*\
-  !*** external "madonna-internal-fn" ***!
-  \**************************************/
-/***/ function(module, exports) {
-
-	module.exports = require("madonna-internal-fn");
-
-/***/ },
-/* 6 */
-/*!******************************!*\
-  !*** external "madonna-map" ***!
-  \******************************/
-/***/ function(module, exports) {
-
-	module.exports = require("madonna-map");
-
-/***/ },
-/* 7 */
 /*!************************!*\
   !*** external "sinon" ***!
   \************************/
@@ -274,7 +193,7 @@ module.exports =
 	module.exports = require("sinon");
 
 /***/ },
-/* 8 */
+/* 6 */
 /*!*****************************!*\
   !*** external "sinon-chai" ***!
   \*****************************/

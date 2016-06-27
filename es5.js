@@ -61,9 +61,9 @@ module.exports =
 	//---------//
 
 	var fp = __webpack_require__(/*! lodash/fp */ 1),
-	    madonna = __webpack_require__(/*! madonna-fp */ 2),
-	    madonnaFn = __webpack_require__(/*! madonna-internal-fn */ 3),
-	    madonnaMap = __webpack_require__(/*! madonna-map */ 4);
+	    madonna = __webpack_require__(/*! madonna-fp/es6 */ 2),
+	    madonnaFn = __webpack_require__(/*! madonna-internal-fn/es6 */ 3),
+	    madonnaMap = __webpack_require__(/*! madonna-map/es6 */ 4);
 
 	//------//
 	// Init //
@@ -124,30 +124,30 @@ module.exports =
 
 /***/ },
 /* 2 */
-/*!*****************************!*\
-  !*** external "madonna-fp" ***!
-  \*****************************/
+/*!*********************************!*\
+  !*** external "madonna-fp/es5" ***!
+  \*********************************/
 /***/ function(module, exports) {
 
-	module.exports = require("madonna-fp");
+	module.exports = require("madonna-fp/es5");
 
 /***/ },
 /* 3 */
-/*!**************************************!*\
-  !*** external "madonna-internal-fn" ***!
-  \**************************************/
+/*!******************************************!*\
+  !*** external "madonna-internal-fn/es5" ***!
+  \******************************************/
 /***/ function(module, exports) {
 
-	module.exports = require("madonna-internal-fn");
+	module.exports = require("madonna-internal-fn/es5");
 
 /***/ },
 /* 4 */
-/*!******************************!*\
-  !*** external "madonna-map" ***!
-  \******************************/
+/*!**********************************!*\
+  !*** external "madonna-map/es5" ***!
+  \**********************************/
 /***/ function(module, exports) {
 
-	module.exports = require("madonna-map");
+	module.exports = require("madonna-map/es5");
 
 /***/ }
 /******/ ]);
