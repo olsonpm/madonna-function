@@ -2,7 +2,7 @@
   "name": "madonna-function",
   "version": "0.1.0",
   "description": "Creates a function which will only be called after its arguments are validated via madonna-fp",
-  "main": "lib/index.js",
+  "main": "es5.js",
   "scripts": {
     "test": "mocha tests"
   },
@@ -18,14 +18,19 @@
   "homepage": "https://github.com/olsonpm/madonna-function#readme",
   "dependencies": {
     "lodash": "^4.12.0",
-    "madonna-fp": "github:olsonpm/madonna-fp#cd1914a098de0863d8b517238a7548a6576796bf",
-    "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#03fa17f5d219d1c75a329db9935daaca3cf068e4",
-    "madonna-map": "github:olsonpm/madonna-map#53a3515b431f166affe00b7ed2b6965eeaffc445"
+    "madonna-fp": "github:olsonpm/madonna-fp#f106683038912c5626b849f853b3afdbd245505f",
+    "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#c0f9f97dbecbfafe42f64899d27e68c17aa8717d",
+    "madonna-map": "github:olsonpm/madonna-map#5907db9b63670946606d14d657fda92dcbe34572"
   },
   "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
     "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "webpack": "^1.13.1",
+    "webpack-node-externals": "^1.2.0"
   }
 }

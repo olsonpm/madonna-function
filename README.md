@@ -8,6 +8,10 @@ convenience since I also often need arguments to come in as raw json and passed
 through a class or constructor.  The mapping functionality is provided by
 [madonna-map](https://github.com/olsonpm/madonna-fp).
 
+**Tested against**
+ - node 0.10.0 for the (default) es5 version
+ - node 6.0.0 for es6 @ `require('madonna-function/es6')`
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
