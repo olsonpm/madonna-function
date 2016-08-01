@@ -19,8 +19,8 @@
   "dependencies": {
     "lodash": "^4.12.0",
     "madonna-fp": "github:olsonpm/madonna-fp#ca65bd4e0ee76d69dbc571db264aa9980387bec8",
-    "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#4331d671b90497be5449b0bcd254a016bc674679",
-    "madonna-map": "github:olsonpm/madonna-map#cdee8bba9c78018c4c612bff7d3f0cc4405660f4"
+    "madonna-internal-fn": "github:olsonpm/madonna-internal-fn#a32901fc2143b3a5dfc89c9d89524d193e479a34",
+    "madonna-map": "github:olsonpm/madonna-map#96e218ae32db59779374f6435165f3d281d330ab"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
