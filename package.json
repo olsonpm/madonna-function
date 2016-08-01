@@ -4,7 +4,7 @@
   "description": "Creates a function which will only be called after its arguments are validated via madonna-fp",
   "main": "es5.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "./test.sh"
   },
   "repository": {
     "type": "git",
